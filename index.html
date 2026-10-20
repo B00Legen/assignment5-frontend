@@ -2,11 +2,20 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/bootstrap.css">
-		<title>untitled</title>
+		<title>JavaScript Basics</title>
 	</head>
 
 	<body>
-		<p id="userData">No Data</p>
-		<script src="js/main.js"></script>
+		<form class="p-3 text-center" style="display: flex; flex-direction: column; row-gap: 12px">
+			<div class="col-3 bg-primary p-2 rounded">
+				<label class="form-label" for="name">Username</label>
+				<input type="text" class="form-control" id="name" placeholder="Alfredo">
+			</div>
+			<div class="col-3 bg-primary p-2 rounded">
+				<label class="form-label" for="birthYear">Birth Year</label>
+				<input type="number" class="form-control" id="birthYear" value="1970">
+			</div>
+			<button class="col-3 btn btn-primary">Create / Update Profile</button>
+		</form>
 	</body>
 </html>
