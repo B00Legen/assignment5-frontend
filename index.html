@@ -2,16 +2,23 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
 		<title>JavaScript Basics</title>
 	</head>
 
 	<body>
-		<div>
-			Username:
-			<p id="userData">No Data</p>
+		<div class="row col-2 align-items-center m-3" style="gap: 15px;">
+			<div class="p-2 bg-primary">
+				<h6>Username</h6>
+				<p id="username">No Data</p>
+			</div>
+			<div class="p-2 bg-primary">
+				<h6>Age</h6>
+				<p id="age">No Data</p>
+			</div>
 		</div>
 		
-		<form class="p-3 text-center" style="display: flex; flex-direction: column; row-gap: 12px">
+		<form id="userForm" class="p-3 text-center">
 			<div class="col-3 bg-primary p-2 rounded">
 				<label class="form-label" for="name">Username</label>
 				<input type="text" class="form-control" id="name" placeholder="Alfredo">
@@ -21,7 +28,24 @@
 				<input type="number" class="form-control" id="birthYear" value="1970">
 			</div>
 			<button class="col-3 btn btn-primary">Create / Update Profile</button>
-			<script src="js/main.js"></script>
+		</form>
+		
+		<div class="col-3 align-items-center m-3 p-3 bg-primary rounded" style="gap: 15px;">
+			<h6>Hobbies</h6>
+			<ul class="bg-light rounded p-2">
+				<li>Chess</li>
+			</ul>
+		</div>
+		
+		<form id="hobbyForm" class="p-3 text-center">
+			<div class="col-3 bg-primary p-2 rounded">
+				<label class="form-label" for="hobby">Enter Hobby</label>
+				<input type="text" class="form-control" id="hobby" placeholder="Basketball">
+			</div>
+			<button class="col-3 btn btn-primary">Add Hobby</button>
+			<button id="remover" class="col-3 btn btn-primary">Delete Hobby</button>
 		</form>
 	</body>
+	
+	<script src="js/main.js"></script>
 </html>
