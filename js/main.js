@@ -1,14 +1,21 @@
-function getAge(currentYear, birthYear) {
-	return currentYear - birthYear;
-}
-
-const userProfile = {
+let userProfile = {
 	name: "Alfredo",
-	birthYear: 1990,
+	birthYear: 1970,
 	isDeveloper: false,
 	hobbies: ["Soccer", "Ping-Pong"]
 };
 
-console.log(userProfile);
-userData.innerHTML = userProfile.name + " is " + getAge(2026, userProfile.birthYear) + " years old";
-userData.innerHTML += " and has " + userProfile.hobbies.length + " hobbies";
+function updateUser(name, birthYear) {
+	userProfile.name = name;
+	userProfile.birthYear = birthYear;
+	if (name != "") {
+		userData.innerHTML = userProfile.name;
+	}
+}
+
+document.querySelector("form").addEventListener("submit", (e) => {
+	e.preventDefault();
+    let name = document.getElementById('name').value;
+    let birthYear = document.getElementById('birthYear').value;
+	updateUser(name, birthYear);
+});

@@ -14,4 +14,8 @@ Used `innerHTML` and made function `getAge()`.
 ## Task 3
 ![Task 3](images/task3.png)
 Made basic `HTML` form.
+## Task 4
+![Task 4, before](images/task4-1.png)
+![Task 4, after](images/task4-2.png)
+Added `Event Listener` to the form submission.
 ## Summary
