@@ -6,45 +6,49 @@
 		<title>JavaScript Basics</title>
 	</head>
 
-	<body>
-		<div class="row col-2 align-items-center m-3" style="gap: 15px;">
-			<div class="p-2 bg-primary">
-				<h6>Username</h6>
-				<p id="username">No Data</p>
+	<body style="display: flex; justify-content: center; gap: 100px;">
+		<div>
+			<div class="row col-* align-items-center m-3" style="gap: 15px;">
+				<div class="p-2 bg-primary">
+					<h6>Username</h6>
+					<p id="username">No Data</p>
+				</div>
+				<div class="p-2 bg-primary">
+					<h6>Age</h6>
+					<p id="age">No Data</p>
+				</div>
 			</div>
-			<div class="p-2 bg-primary">
-				<h6>Age</h6>
-				<p id="age">No Data</p>
-			</div>
+			
+			<form id="userForm" class="p-3 text-center">
+				<div class="col-* bg-primary p-2 rounded">
+					<label class="form-label" for="name">Username</label>
+					<input type="text" class="form-control" id="name" placeholder="Alfredo">
+				</div>
+				<div class="col-* bg-primary p-2 rounded">
+					<label class="form-label" for="birthYear">Birth Year</label>
+					<input type="number" class="form-control" id="birthYear" value="1970">
+				</div>
+				<button class="col-* btn btn-primary">Create / Update Profile</button>
+			</form>
 		</div>
 		
-		<form id="userForm" class="p-3 text-center">
-			<div class="col-3 bg-primary p-2 rounded">
-				<label class="form-label" for="name">Username</label>
-				<input type="text" class="form-control" id="name" placeholder="Alfredo">
+		<div>
+			<div class="col-* align-items-center m-3 p-3 bg-primary rounded" style="gap: 15px;">
+				<h6>Hobbies</h6>
+				<ul class="bg-light rounded p-2">
+					<li>Chess</li>
+				</ul>
 			</div>
-			<div class="col-3 bg-primary p-2 rounded">
-				<label class="form-label" for="birthYear">Birth Year</label>
-				<input type="number" class="form-control" id="birthYear" value="1970">
-			</div>
-			<button class="col-3 btn btn-primary">Create / Update Profile</button>
-		</form>
-		
-		<div class="col-3 align-items-center m-3 p-3 bg-primary rounded" style="gap: 15px;">
-			<h6>Hobbies</h6>
-			<ul class="bg-light rounded p-2">
-				<li>Chess</li>
-			</ul>
+			
+			<form id="hobbyForm" class="p-3 text-center">
+				<div class="col-* bg-primary p-2 rounded">
+					<label class="form-label" for="hobby">Enter Hobby</label>
+					<input type="text" class="form-control" id="hobby" placeholder="Basketball">
+				</div>
+				<button class="col-* btn btn-primary">Add Hobby</button>
+				<button id="remover" class="col-* btn btn-primary">Delete Hobby</button>
+			</form>
 		</div>
-		
-		<form id="hobbyForm" class="p-3 text-center">
-			<div class="col-3 bg-primary p-2 rounded">
-				<label class="form-label" for="hobby">Enter Hobby</label>
-				<input type="text" class="form-control" id="hobby" placeholder="Basketball">
-			</div>
-			<button class="col-3 btn btn-primary">Add Hobby</button>
-			<button id="remover" class="col-3 btn btn-primary">Delete Hobby</button>
-		</form>
 	</body>
 	
 	<script src="js/main.js"></script>

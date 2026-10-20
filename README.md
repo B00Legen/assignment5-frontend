@@ -24,3 +24,5 @@ Added `Event Listener` to the form submission.
 With the help of StackOverflow I finally added `li` append and remove.
 ## Summary
 It was really difficult to learn `JavaScript`, but at the end it helped me to add logic and interaction into my website.
+![Final Website](images/Final.png)
+At the end I decided to change the layout so that everything is in the center.
