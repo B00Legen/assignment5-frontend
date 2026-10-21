@@ -4,3 +4,8 @@ form {
 	row-gap: 12px;
 	background-color: silver;
 }
+body {
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
